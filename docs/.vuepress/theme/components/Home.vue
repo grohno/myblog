@@ -137,7 +137,7 @@ export default {
       background none
       margin-bottom: 0;
     ul
-      padding: o;
+      padding: 0;
     ul li
       background-position center
       background-repeat no-repeat
