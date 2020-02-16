@@ -33,16 +33,19 @@ export default {
     margin-bottom 0
   .bloglist .blogpost:nth-child(2n+1)
     background #DFE6F5
-  .bloglist .blogpost h2
+  .bloglist .blogpost h2 a
     font-size: 18px
     font-weight bold
     padding 0
     margin 0 0 10px
   .bloglist .blogpost p
-    padding 0
+    padding 0 6em 0 0;
     margin 0
   .bloglist .blogpost .readmore
     position absolute
-    bottom: 0
+    bottom: 10px
     right 10px
+@media (max-width: $MQMobileNarrow)
+    .bloglist
+      padding 0
 </style>
