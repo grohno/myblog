@@ -136,6 +136,8 @@ export default {
       border none
       background none
       margin-bottom: 0;
+    ul
+      passing: o;
     ul li
       height 570px
       background-position center
