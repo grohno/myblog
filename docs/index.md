@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.png
+heroImage: /img/hero.png
 heroText: Yuo MyBlog
 description: 練習用のブログです
 footer: Copyright © 2020-present Yuo
