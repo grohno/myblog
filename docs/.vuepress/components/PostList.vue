@@ -1,12 +1,12 @@
 // PostList.vue
 <template>
-    <div>
-        <div v-for="post in posts">
+    <div class="bloglist">
+        <div class="blogpost" v-for="post in posts">
             <h2><a v-bind:href="post.path">{{post.title}}</a></h2>
             <p>{{post.frontmatter.description}}</p>
-            <a v-bind:href="post.path">続きを読む</a>
-        </div>
-    </div>
+            <a class="readmore" v-bind:href="post.path">続きを読む</a>
+        </div><!-- .blogpost end -->
+    </div><!-- .bloglist end -->
 </template>
 <script>
 export default {
@@ -21,3 +21,22 @@ export default {
     }
 }
 </script>
+
+<style lang="stylus">
+  .bloglist
+    padding 20px
+  .bloglist .blogpost
+    margin-bottom 20px
+    position relative
+  .bloglist .blogpost:last-child
+    margin-bottom 0
+  .bloglist .blogpost:nth-child(2n+1)
+    background #DFE6F5
+  .bloglist .blogpost h2
+    font-size: 18px
+    font-weight bold
+  .bloglist .blogpost .readmore
+    position absolute
+    bottom: 0
+    right 10px
+</style>
