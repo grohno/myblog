@@ -92,6 +92,7 @@ $navbar-horizontal-padding = 1.5rem
 .navbar
   padding $navbar-vertical-padding $navbar-horizontal-padding
   line-height $navbarHeight - 1.4rem
+  background rgba(223,230,245,0.6)
   a, span, img
     display inline-block
   .logo
@@ -114,6 +115,7 @@ $navbar-horizontal-padding = 1.5rem
     right $navbar-horizontal-padding
     top $navbar-vertical-padding
     display flex
+    background none
     .search-box
       flex: 0 0 auto
       vertical-align top
