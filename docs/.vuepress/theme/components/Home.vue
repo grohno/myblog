@@ -137,9 +137,8 @@ export default {
       background none
       margin-bottom: 0;
     ul
-      passing: o;
+      padding: o;
     ul li
-      height 570px
       background-position center
       background-repeat no-repeat
       -moz-background-size cover
