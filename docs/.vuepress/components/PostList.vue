@@ -26,6 +26,7 @@ export default {
   .bloglist
     padding 20px
   .bloglist .blogpost
+    padding 5px 10px
     margin-bottom 20px
     position relative
   .bloglist .blogpost:last-child
@@ -35,6 +36,10 @@ export default {
   .bloglist .blogpost h2
     font-size: 18px
     font-weight bold
+    padding 0
+    margin-bottom 10px
+  .bloglist .blogpost p
+    padding 0    
   .bloglist .blogpost .readmore
     position absolute
     bottom: 0
