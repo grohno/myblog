@@ -135,14 +135,16 @@ export default {
       box-shadow none
       border none
       background none
-      margin-bottom: 0;
+      margin-bottom: 0
     ul
-      padding: 0;
+      padding 0
+      margin 0
     ul li
       background-position center
       background-repeat no-repeat
       -moz-background-size cover
       background-size cover
+      padding 40px 10px
     ul li:first-child
       background-image:url(/img/spring.JPG);
     ul li:nth-child(2)      
