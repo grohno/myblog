@@ -129,20 +129,35 @@ export default {
   display block
   .hero
     text-align center
+    padding 20px
+    ul li
+      background-position center top
+      background-repeat no-repeat
+      -moz-background-size cover
+      background-size cover
+    ul li:first-child
+      background-image:url(/img/spring.JPG);
+    ul li:nth-child(2)      
+      background-image:url(/img/summer.JPG);
+    ul li:nth-child(3)      
+      background-image:url(/img/autumn.JPG);
     img
       max-width: 100%
       max-height 280px
       display block
       margin 3rem auto 1.5rem
+      border 5px solid #fff
+      border-radius 30px
     h1
       font-size 3rem
     h1, .description, .action
       margin 1.8rem auto
+      color #fff
     .description
       max-width 35rem
       font-size 1.6rem
       line-height 1.3
-      color lighten($textColor, 40%)
+      color #fff
     .action-button
       display inline-block
       font-size 1.2rem
