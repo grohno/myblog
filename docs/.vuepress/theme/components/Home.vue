@@ -129,9 +129,16 @@ export default {
   display block
   .hero
     text-align center
-    padding 20px
+    .bx-wrapper
+      -moz-box-shadow none
+      -webkit-box-shadow none
+      box-shadow none
+      border none
+      background none
+      margin-bottom: 0;
     ul li
-      background-position center top
+      height 570px
+      background-position center
       background-repeat no-repeat
       -moz-background-size cover
       background-size cover
