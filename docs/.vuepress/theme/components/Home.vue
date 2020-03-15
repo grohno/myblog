@@ -1,78 +1,26 @@
 <template>
   <main class="home" aria-labelledby="main-title">
     <header class="hero">
-      <ul class="bxslider">
-        <li>
-          <img
-            v-if="data.heroImage"
-            :src="$withBase(data.heroImage)"
-            :alt="data.heroAlt || 'hero'"
-          >
-          <h1 v-if="data.heroText !== null" id="main-title">{{ data.heroText || $title || 'Hello' }}</h1>
+      <img
+        v-if="data.heroImage"
+        :src="$withBase(data.heroImage)"
+        :alt="data.heroAlt || 'hero'"
+      >
+      <h1 v-if="data.heroText !== null" id="main-title">{{ data.heroText || $title || 'Hello' }}</h1>
 
-          <p class="description">
-            {{ data.tagline || $description || 'Welcome to your VuePress site' }}
-          </p>
+      <p class="description">
+        {{ data.tagline || $description || 'Welcome to your VuePress site' }}
+      </p>
 
-          <p
-            class="action"
-            v-if="data.actionText && data.actionLink"
-          >
-            <NavLink
-              class="action-button"
-              :item="actionLink"
-            />
-          </p>
-        </li>
-        <li>
-          <img
-            v-if="data.heroImage"
-            :src="$withBase(data.heroImage)"
-            :alt="data.heroAlt || 'hero'"
-          >
-          <h1 v-if="data.heroText !== null" id="main-title">{{ data.heroText || $title || 'Hello' }}</h1>
-
-          <p class="description">
-            {{ data.tagline || $description || 'Welcome to your VuePress site' }}
-          </p>
-
-          <p
-            class="action"
-            v-if="data.actionText && data.actionLink"
-          >
-            <NavLink
-              class="action-button"
-              :item="actionLink"
-            />
-          </p>
-        </li>
-        <li>
-          <img
-            v-if="data.heroImage"
-            :src="$withBase(data.heroImage)"
-            :alt="data.heroAlt || 'hero'"
-          >
-          <h1 v-if="data.heroText !== null" id="main-title">{{ data.heroText || $title || 'Hello' }}</h1>
-
-          <p class="description">
-            {{ data.tagline || $description || 'Welcome to your VuePress site' }}
-          </p>
-
-          <p
-            class="action"
-            v-if="data.actionText && data.actionLink"
-          >
-            <NavLink
-              class="action-button"
-              :item="actionLink"
-            />
-          </p>
-        </li>
-      </ul>
-
-
-
-
+      <p
+        class="action"
+        v-if="data.actionText && data.actionLink"
+      >
+        <NavLink
+          class="action-button"
+          :item="actionLink"
+        />
+      </p>
     </header>
 
     <div
@@ -119,6 +67,14 @@ export default {
     }
   }
 }
+
+// import { VueAgile } from 'vue-agile'
+
+// export default {
+// 	components: {
+// 		agile: VueAgile
+// 	}
+// }
 </script>
 
 <style lang="stylus">
@@ -129,31 +85,15 @@ export default {
   display block
   .hero
     text-align center
-    .bx-wrapper
-      -moz-box-shadow none
-      -webkit-box-shadow none
-      box-shadow none
-      border none
-      background none
-      margin-bottom: 0
-    ul
-      padding 0
-      margin 0
-    ul li
-      background-position center
-      background-repeat no-repeat
-      -moz-background-size cover
-      background-size cover
-      padding 40px 10px
-    ul li:first-child
-      background-image:url(/img/spring.JPG);
-    ul li:nth-child(2)      
-      background-image:url(/img/summer.JPG);
-    ul li:nth-child(3)      
-      background-image:url(/img/autumn.JPG);
+    padding 50px
+    background-image url(/img/summer.JPG)
+    background-position center top
+    background-repeat no-repeat
+    -moz-background-size cover
+    background-size cover
     img
-      max-width: 100%
-      max-height 280px
+      max-width: 50%
+      max-height 140px
       display block
       margin 3rem auto 1.5rem
       border 5px solid #fff

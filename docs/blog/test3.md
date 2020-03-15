@@ -3,6 +3,8 @@ title: テスト投稿3です。
 date: 2020-01-08
 description: 記事の要約
 sidebar: auto
+tags:
+- howto
 ---
 # テスト投稿3
 こんばんわ  

@@ -7,6 +7,7 @@
             <a class="readmore" v-bind:href="post.path">続きを読む</a>
         </div><!-- .blogpost end -->
     </div><!-- .bloglist end -->
+
 </template>
 <script>
 export default {

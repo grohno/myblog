@@ -148,6 +148,32 @@ function flatten (items, res) {
     padding-top 1rem
     overflow auto // clear float
   .next
+    display inline-block
+    line-height 1.2
     float right
-
+    background #3F3F3F
+    color #ffffff
+    border-radius 3px
+    padding 5px 20px
+    box-shadow 0px 2px 2px 0px #666666
+    a
+     color #EFEFEF
+  span.prev
+    display inline-block
+    line-height 1.2
+    background #3F3F3F
+    color #ffffff
+    border-radius 3px
+    padding 5px 20px
+    box-shadow 0px 2px 2px 0px #666666
+    a
+     color #EFEFEF
+@media (max-width: $MQMobile)
+  .page-nav
+    .inner span:first-child
+      margin-bottom 10px
+    .inner
+      text-align center
+      .next
+        float none
 </style>

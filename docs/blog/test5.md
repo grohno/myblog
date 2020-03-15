@@ -1,11 +1,12 @@
 ---
-title: テスト投稿2です。
-date: 2020-01-06
+title: テスト投稿5です。
+date: 2020-01-15
 description: 記事の要約
+sidebar: auto
 tags:
-- news
+- howto
 ---
-# テスト投稿2
+# テスト投稿5
 こんばんわ  
 aa
 
