@@ -1,9 +1,8 @@
 ---
-title: テスト投稿2です。
+title: テスト投稿2です。カテゴリはHowto
 date: 2020-01-06
 description: 記事の要約
-tags:
-- news
+category: howto
 ---
 # テスト投稿2
 こんばんわ  

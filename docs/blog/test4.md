@@ -1,10 +1,9 @@
 ---
-title: テスト投稿4です。
+title: テスト投稿4です。カテゴリはHowto
 date: 2020-01-13
 description: 記事の要約
 sidebar: auto
-tags:
-- news
+category: howto
 ---
 # テスト投稿4
 こんばんわ  
